@@ -1,0 +1,14 @@
+#!/bin/bash -x
+	export DATABASE_URL=${db_address}
+	export HOST=$(curl -s 169.254.169.254/latest/meta-data/public-hostname)
+
+	echo "Hello, World - reading ${db_address}, running on "$HOST > index.html
+	echo "nohup busybox httpd -f -p 8080"
+	
+	sudo apt-get --assume-yes install docker.io
+	
+	sudo service docker start
+	
+	sudo docker pull vba66a/vbdemo
+	echo "docker pull completed"
+	sudo docker run -p 8000:8000 -e DATABASE_URL=$DATABASE_URL -e HOST=$HOST vba66a/vbdemo 

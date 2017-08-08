@@ -1,0 +1,37 @@
+{
+  "development_not_working": {
+	"use_env_variable": "DATABASE_URL"
+  },
+  "development": {
+	"username": "todosdemo",
+    "password": "Hxn1Uimu20vqZTvds6Wb1Ut0tQ1dvFr8",
+    "database": "todosdemo",
+    "host": "todosasg.ctrgmeyvxyj5.us-west-2.rds.amazonaws.com",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "development_elephant": {
+	"username": "hkfjveps",
+    "password": "Hxn1Uimu20vqZTvds6Wb1Ut0tQ1dvFr8",
+    "database": "hkfjveps",
+    "host": "stampy.db.elephantsql.com",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "development_local": {
+    "username": "waiyaki",
+    "password": null,
+    "database": "todos-dev",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "waiyaki",
+    "password": null,
+    "database": "todos-test",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
