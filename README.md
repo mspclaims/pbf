@@ -41,7 +41,9 @@ How to make it work:
 - update main.tf aws_launch_configuration to use new image_id  
 - run 'terraform plan'
 - run 'terraform apply'
-- confirm that environment setup properly by checking <load balancer public URL>:8000/api-docs
+- confirm that environment setup properly by checking <load_balancer_public_URL>:8000/api-docs 
+P.S. I setup CNAME pbf.tripletee.com to point to ELB URL http://tf-lb-009624fd4c3474bdc9c5bfdbf1-2106718005.us-west-2.elb.amazonaws.com  
+
 
 
 	
